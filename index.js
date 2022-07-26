@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const app = express();
 const http = require('http');
-require('DOTENV').config();
+require('dotenv').config();
 const stripe = require('stripe')(process.env.STRIPE_SECRET);
 const server = http.createServer(app);
 const { Server } = require('socket.io');
