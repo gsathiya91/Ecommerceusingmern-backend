@@ -46,9 +46,9 @@ app.post('/create-payment', async(req, res)=> {
      }
   })
   
-
+const PORT = process.env.PORT || 8000
 //Port
-server.listen(8000, () => {
+server.listen(PORT, () => {
     console.log('server is running at port 8000')
 })
 //Db connection
